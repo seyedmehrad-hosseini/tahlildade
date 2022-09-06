@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquerry.css">
+    <link rel="stylesheet" href="fonts/WebFonts/css/fontiran.css">
+    <link rel="stylesheet" href="fonts/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="fonts/font-awesome/Content/font-awesome.css">
+    <link rel="stylesheet" href="fonts/font-awesome/Content/font-awesome.min.css">
+    <!-- <script src="sliderengine/jquery.js"></script> -->
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>
+        آموزش برنامه نویسی-آموزشگاه برنامه نویسی</title>
+        
+</head>
+<body>
+      <header>
+          <aside class="topaside">
+                    <div class="boxblue hidden-sm hidden-xs hidden-md" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="col1  col-6">
+                                    <ul class="logsign">
+                                        <li class="login">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                            <span>ورود</span>
+                                        </li>
+                                        <li class="sign">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                            <span>ثبت نام</span>
+                                        </li>
+                                        <li class="customers">
+                                            <i class="fa fa-handshake-o customericon" aria-hidden="true"></i>
+                                            <span class="customertitle">مشتریان تحلیل داده</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col2 col-6">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="socialicon col-3">
+                                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                                <i class="fa fa-youtube" aria-hidden="true"></i>
+        
+                                            </div>
+
+                                            <div class="toolsbox col-3">
+                                                <span>
+                                                    ابزار سایت
+
+                                                </span>
+                                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                                <ul>
+                                                    <li>
+                                                        <span class="imgtool imgtool1"></span>
+                                                        <span class="titletool titletool1">ساخت استایل</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="imgtool imgtool2"></span>
+                                                        <span class="titletool titletool2">بررسی سئو</span>
+                                                    </li>
+                                                    <li class="toolsli">
+                                                        <span class="imgtool imgtool3"></span>
+                                                        <span class="titletool titletool3">فشرده ساز</span>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxblack hidden-xl hidden-lg " >
+                        <div class="container">
+                
+                            <div class="row">
+                                <div class="addremove col1  col-3">
+
+                                        <i class="fa fa-list" onclick="blacklistadd()" aria-hidden="true"></i>
+                                        <i id="remove" class="fa fa-times" onclick="blacklistclose()" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="col2 col-9">
+            
+                                        <h2>آموزشگاه تحلیل داده</h2>
+                
+                                </div>
+
+                             </div>
+                        </div>
+                        <div id="listblack" class="listblack" >
+                            <script>
+                                const list = document.querySelector("#listblack");
+                                listwidth = $("#listblack").innerWidth();
+                                
+                                list.style.right = -(listwidth) + "px";
+                                
+                            </script>
+                            <ul>
+                                <li><a href="#">دوره های آموزشی </a></li>
+                                <li><a href="#">آموزش گام به گام</a></li>
+                                <li><a href="#">فیلم های آموزشی</a></li>
+                                <li><a href="#">پروژه ها </a></li>
+                                <li><a href="#">کتابخانه </a></li>
+                                <li><a href="#">کامپوننت</a></li>
+                                <li><a href="#">قالب</a></li>
+                                <li><a href="#">برنامه</a></li>
+                                <li><a href="#">اخبار</a></li>
+                                <li><a href="#">انجمن تحلیل داده</a></li>
+                            </ul>
+
+                        </div>
+                    </div> 
+          </aside>
+          <section class="navhead hidden-sm hidden-md hidden-xs">
+              <div class="middlenav">
+                 
+                        <div class="logo ">
+                            <img src="images/Logo.png" alt="">
+                            <h2> تخصصی ترین مرکزآموزش برنامه نویسی </h2>
+                        </div>
+                      <ul class="headicon ">
+                          <li class="icon1">
+                            <i class="fa fa-home"></i>
+                            <span>صفحه نخست</span>
+                          </li>
+                          <li class="icon2">
+                            <i class="fa fa-users"></i>
+                            <span>تالار گفتگو</span>
+                          </li>
+                          <li class="icon3">
+                            <i class="fa fa-user-plus"></i>
+                            <span>جذب مدرس</span>
+                          </li>
+                          <li class="icon4">
+                            <i class="fa fa-phone"></i>
+                            <span>تماس با ما</span>
+                          </li>
+
+                        
+                      </ul>
+                      <div class="calend hidden-calendar">
+                          <span>
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>تقویم آموزشی</span>
+                          </span>
+                      </div>
+               
+              </div>
+              <nav class="menu">
+                  <ul class="listmenu">
+                      <li class="list1laye">
+                          <a class="listtit" href="#">دوره های آموزشی</a>
+                          <nav class="laye2">
+                            <ul class="list">
+                                <li class="list1">
+                                     <a href="#" class="tit1">مقدمات برنامه نویسی</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">برنامه نویسی پایتون</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">آموزش طراحی سايت</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">برنامه نويسي موبايل ( ios and Android )</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">برنامه نویسی #C-سی شارپ</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">آموزش برنامه نویسی PHP و MySQL</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">آموزش برنامه نویسی</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">برنامه نويسي جاوا</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">برنامه نویسی تحت وب (ASP.Net MVC )</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">پایگاه داده ها</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">طراحی و معماری نرم افزار</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">تجزیه و تحلیل شی گرا ( UML and Agile )</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">طراحی و برنامه نویسی مدرن وب و موبایل</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">آموزش گام به گام برنامه نویسی به زبان سی پلاس پلاس</a></li>
+                                <li class="list1">
+                                     <a href="#" class="tit1">بلاک چین و ارزهای دیجیتال</a></li>
+                            </ul>
+                          </nav>
+                      </li>
+                      <li class="list2laye list2">
+                        <a class="listtit" href="#">آموزش گام به گام</a>
+                        <nav class="laye2">
+                        </nav>
+                    </li>
+                    <li class="list2laye list3">
+                        <a class="listtit" href="#">فیلم های آموزشی</a>
+                        <nav class="laye2"></nav>
+                    </li>
+                    <li class="list2laye list4">
+                        <a class="listtit" href="#">پروزه ها</a>
+                        <nav class="laye2"></nav>
+                    </li>
+                    <li class="list2laye list5">
+                        <a class="listtit" href="#">کتابخانه</a>
+                        <nav class="laye2"></nav>
+                    </li>
+                    <li class="list2laye list6">
+                        <a class="listtit" href="#">کامپوننت</a>
+                         <nav class="laye2"></nav>
+                    </li>
+                    <li class="list2laye list7">
+                        <a class="listtit" href="#">قالب</a>
+                        <nav class="laye2"></nav>
+                    </li>
+                    <li class="list2laye list8">
+                        <a class="listtit" href="#">برنامه</a>
+                        <nav class="laye2"></nav>
+                    </li>
+                  </ul>
+              </nav>
+
+          </section>
+
+      </header>
+      <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1920px;margin:0px auto 0px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/FrontEnd.jpg" alt="FrontEnd"  title="FrontEnd" />
+                </li>
+                <li><img src="images/MVC-Core.jpg" alt="MVC-Core"  title="MVC-Core" />
+                </li>
+                <li><img src="images/Paython.jpg" alt="Paython"  title="Paython" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/FrontEnd-tn.jpg" alt="FrontEnd" title="FrontEnd" /></li>
+                <li><img src="images/MVC-Core-tn.jpg" alt="MVC-Core" title="MVC-Core" /></li>
+                <li><img src="images/Paython-tn.jpg" alt="Paython" title="Paython" /></li>
+            </ul>
+        </div>
+    </div>
+    <section class="bodyasli">
+        <div class="fourbox container">
+            <div class="row">
+                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="box1">
+                        <span class="boximage img1"></span>
+                        <span class="boxtitle">مشاوره</span>
+                        <p>می توانید با بهره مندی از تجارب مشاوران و مدرسان حرفه ای،دوره مناسب آموزش برنامه نویسی را انتخاب نمایید.</p>
+
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="box1">
+                        <span class="boximage img2"></span>
+                        <span class="boxtitle">ثبت نام</span>
+                        <p>آموزشگاه برنامه نویسی تحلیل داده محیط عملی را با برترین اساتید برنامه نویسی و دیتابیس در ایران،همراه با لابراتوار مجهز در اختیار شما قرار می دهد.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="box1">
+                        <span class="boximage img3"></span>
+                        <span class="boxtitle">شرکت در کلاس</span>
+                        <p>                        با شرکت در کلاسهای آموزش برنامه نویسی، به تجربه ای عملی در محیطی علمی دست خواهید یافت و از برنامه ای بی نظیر بهره مند خواهید شد.  </p>
+                     </div>
+                 </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="box1">
+                        <span class="boximage img4"></span>
+                        <span class="boxtitle">پشتیبانی رایگان</span>
+                        <p>پشتیبانی علمی و عملی از دانشجویان پس از پایان دوره از تعهدات ماست. تا زمان احساس موفقیتتان در کنار شما خواهیم بود.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="grandfather">
+            <div id="father" class="sliderfhater">
+                <div id="child" style="right: -500px; ">
+                    <img src="images/book1.jpg" alt="">
+                    <img src="images/book2.jpg" alt="">
+                    <img src="images/book3.jpg" alt="">
+                    <img src="images/book4.jpg" alt="">
+                    <img src="images/book5.jpg" alt="">
+                    <img src="images/book6.jpg" alt="">
+                    <img src="images/book7.jpg" alt="">
+                    <img src="images/book8.jpg" alt="">
+                    <img src="images/book9.jpg" alt="">
+                    <img src="images/book10.jpg" alt="">
+        
+                </div>
+        
+                <span class="span1"onclick="feleshchap()">
+                    <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                </span>
+                <span class="span2" onclick="feleshrast()" >
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </span>
+            </div>
+            <span class="span3slider">آخرین کتاب های تحلیل داده</span>
+        </div>
+        <div class="videoonline">
+            <h4 class="videotitle">
+                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                <span>                آخرین فیلم های آموزشی فارسی تحلیل داده
+                </span>
+            </h4>
+            <div class="video1">
+                <span></span>
+                <video controls loop autoplay src="videos/36e7b6b29086697bfdb25bce55af105237320755-360p.mp4"></video>
+                <a href="#" class="nextvideo">
+                    <h4>فیلم بعدی</h4>
+                </a>
+            </div>
+            
+        </div>
+        <article class="articles">
+            <article class="box1">
+                <ul class="box1list">
+                    <h4>آخرین آموزش های گام به گام</h4>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">هر آنچه باید درمورد Deep fake بدانید!</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">معرفی برخی از Extention های پر کاربرد در VS Code</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">آموزش نصب نرم افزار Visual studio 2022</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">آموزش کامل نصب نرم افزار SQL Server 2019</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">آموزش نصب Android Studio</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">فیلم آموزش دانلود و نصب Vs Code</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">آموزش نصب برنامه ویژوال استودیو 2019</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">سن مناسب یادگیری برنامه نویسی برای کودکان</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">مزایای یادگیری برنامه نویسی برای کودکان</a></li>
+                    <li>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <a href="#">چگونه کد تمیز بنویسیم؟</a></li>
+                </ul>
+
+            </article>
+            <article class="box2">
+                <span>آموزش برنامه نویسی Microsoft </span>
+                <ul class="box2artic">
+                    <li class="cart">
+                        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+
+                        <h5>آموزش برنامه نویسی C#</h5>
+                        <ul>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش Visual Studio</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">ساختار یک پروژه در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش قالب بندی نمایش داده در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">توابع ریاضی در سی شارپ</a></li>
+
+                    
+                        </ul>
+
+                    </li>
+
+                    <li class="aspart">
+                        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+
+                        <h5>آموزش asp.net</h5>
+                        <ul>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش Visual Studio</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">ساختار یک پروژه در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش قالب بندی نمایش داده در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">توابع ریاضی در سی شارپ</a></li>
+
+                    
+                        </ul>
+
+                    </li>
+                    <li class="ctwoart">
+                        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+
+                        <h5>آموزش سي شارپ 2</h5>
+                        <ul>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش Visual Studio</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">ساختار یک پروژه در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش قالب بندی نمایش داده در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">توابع ریاضی در سی شارپ</a></li>
+
+                    
+                        </ul>
+                    </li>
+                    <li class="mvcart">
+                        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+
+                        <h5>آموزش MVC</h5>
+                        <ul>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش Visual Studio</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">ساختار یک پروژه در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">آموزش قالب بندی نمایش داده در سی شارپ</a></li>
+                            <li>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                <a href="#">توابع ریاضی در سی شارپ</a></li>
+
+                    
+                        </ul>
+                    </li>
+                    <li class="entityart">
+                        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+
+                        <h5>آموزش Entity Framework Code First</h5></li>
+                
+                </ul>
+            </article>
+        </article>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <div class="box1">
+                        <div class="socialicon ">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+
+                        </div>
+                        <span class="khattire"></span>
+                        <ul class="othersites">
+                            سایت های مرتبط:
+
+                            <li>Microsoft</li>
+                            <li>CodeProject</li>
+                            <li>java</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <div class="box2">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+
+                                تلفن: 88146323 - 88146330</li>
+                            <li>
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                تلفن همراه: 09039737034</li>
+                            <li>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                تماس، همه روزه غیر از شنبه ها ، ساعت 9 صبح تا 18 شب</li>
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                پست الکترونیک: tahlildadehins@gmail.com</li>
+                            <li> 
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                آدرس: تهران - خيابان شريعتی - بالا تر از خیابان ملک - جنب بانک صادرات - پلاک 561 - واحد 7</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <div class="box3">تمامی حقوق این سایت متعلق به آموزشگاه تحلیل داده می باشد .</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="backtotop" class="backtotop" >
+        <i class="fa fa-chevron-up" aria-hidden="true" style="color: white;"></i>
+    </a>
+    <Script src="js/scripts.js"></Script>
+</body>
+</html>
